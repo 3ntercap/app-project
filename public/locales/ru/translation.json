@@ -2,5 +2,8 @@
   "Language": "Русский",
   "Main page": "Главная страница",
   "Main": "Главная",
-  "About": "О сайте"
+  "About": "О сайте",
+  "Page not found": "Страница не найдена",
+  "something-went-wrong": "Что-то пошло не так...",
+  "refresh-page": "Обновить страницу"
 }
