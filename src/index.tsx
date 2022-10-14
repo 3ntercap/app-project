@@ -15,4 +15,4 @@ render(
         </ErrorBoundary>
     </BrowserRouter>,
     document.getElementById('root')
-)
+);

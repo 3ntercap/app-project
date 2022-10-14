@@ -7,7 +7,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     const svgLoader = {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
-    }
+    };
 
     const cssLoaders = {
         test: /\.s[ac]ss$/i,
@@ -26,13 +26,13 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
             },
             "sass-loader"
         ],
-    }
+    };
 
     const typescriptLoader = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
-    }
+    };
 
     const babelLoader = {
         test: /\.(js|jsx|tsx)$/,
@@ -52,7 +52,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
                 ]
             }
         }
-    }
+    };
 
     const fileLoader = {
         test: /\.(png|jpe?g|gif|woff|woff2)$/i,
@@ -61,7 +61,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
                 loader: 'file-loader',
             },
         ],
-    }
+    };
 
     return [
         fileLoader,
@@ -69,5 +69,5 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
         babelLoader,
         typescriptLoader,
         cssLoaders,
-    ]
+    ];
 }
